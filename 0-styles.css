@@ -1,0 +1,60 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding   : 0;
+    margin    : 0;
+}
+
+:root {
+    --color-light-gray: #c6c6c6;
+    --color-gray      : #f7f7f7;
+
+    --color-card-background: var(--color-gray);
+}
+
+ul {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    width          : 70%;
+    list-style     : none;
+    margin         : 5rem auto;
+    flex-wrap      : wrap;
+}
+
+li {
+    width           : 14rem;
+    height          : 23rem;
+    border          : 2px solid var(--color-light-gray);
+    margin-top      : 1rem;
+    padding         : 1rem;
+    text-align      : center;
+    font-size       : 2rem;
+    font-weight     : 700;
+    border-radius   : 1rem;
+    background-color: var(--color-card-background);
+}
+
+
+.icon {
+    display: block;
+    height : 100%;
+    width  : 100%;
+}
+
+.i-html,
+.i-css,
+.i-js {
+    background     : no-repeat url("images/0-sprite.png");
+    background-size: 38rem;
+}
+
+
+.i-css {
+    background-position-x: -13.1rem;
+}
+
+.i-js {
+    background-position-x: -25.7rem;
+}
