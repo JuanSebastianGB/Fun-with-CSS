@@ -43,7 +43,8 @@ a,
   justify-content: center;
   align-items    : center;
 
-  margin: 5px 0;
+  margin    : 5px 0;
+  transition: transform scale(1.3);
 }
 
 a i {
