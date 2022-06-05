@@ -1,0 +1,30 @@
+h2 a {
+  display : inline;
+  position: relative;
+  cursor  : pointer;
+}
+
+a {
+  color          : #a73241;
+  text-decoration: none;
+}
+
+a:before {
+  display         : block;
+  content         : "";
+  height          : 3px;
+  width           : 100%;
+  background-color: #cc1c3c;
+  bottom          : 0;
+  left            : .1rem;
+  position        : absolute;
+
+  transform-origin: left;
+  transform       : scaleX(0);
+  transition      : transform .5s ease-out;
+
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}

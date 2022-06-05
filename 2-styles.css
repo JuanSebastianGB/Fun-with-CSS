@@ -1,0 +1,19 @@
+.toggle-cb {
+  display: none;
+}
+
+.toggle-label {
+  cursor: pointer;
+}
+
+.toggle-inner {
+  content: url(images/off.png);
+}
+
+.toggle-cb:checked+.toggle-label .toggle-inner {
+  content: "";
+}
+
+.toggle-cb:checked+.toggle-label .toggle-switch {
+  content: url(images/on.png);
+}
